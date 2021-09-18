@@ -1,0 +1,43 @@
+# asks which operation the calculator will use on the provided numbers
+input1 = input("Would you like to add or subtract? ")
+
+# statement that handles addition
+if input1 == ("add"):
+
+    num1 = input("First number to be added: ")
+    num2 = input("Second number to be added: ")
+    result = int(num1) + int(num2)
+    print("Result equals " + str(result))
+
+# statement that handles subtraction
+elif input1 == ("subtract"):
+
+    # creates variables in which the user chosen numbers are stored
+    num1 = input("First number to be subtracted: ")
+    num2 = input("Second number to be subtracted: ")
+
+    # performs the operation
+    result = int(num1) - int(num2)
+
+    # prints the final result
+    print("Result equals " + str(result))
+
+# statement that handles multiplication
+elif input1 == ("multiply"):
+
+    num1 = input("First number to be subtracted: ")
+    num2 = input("Second number to be subtracted: ")
+    result = int(num1) * int(num2)
+    print("Result equals " + str(result))
+
+# statement that handles division
+elif input1 == ("divide"):
+
+    num1 = input("First number to be subtracted: ")
+    num2 = input("Second number to be subtracted: ")
+    result = int(num1) / int(num2)
+    print("Result equals " + str(result))
+
+# handles cases of any other input
+else:
+    print("Not a valid input, please try again.")
